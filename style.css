@@ -356,11 +356,14 @@ figure:focus-within figcaption {
 .faqs {
     margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-background-color);
+    background-image: url(Images/deck-building-progress.jpg);
+    background-position: center;
     border: 2px solid var(--secondary-background-color);
 }
 
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
+    background-color: var(--shadow-color-dark);
 }
 
 .faqs button {
