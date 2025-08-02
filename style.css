@@ -265,6 +265,7 @@ figure:focus-within figcaption {
 
 .products {
     margin: 1rem;
+    
 }
 
 .products .content-wrapper {
@@ -294,6 +295,7 @@ figure:focus-within figcaption {
     padding: 3px;
     margin: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--primary-background-color);
+    box-shadow: 2px 2px 2px var(--hover-text-color);
 }
 
 .products .content-wrapper article h2 {
