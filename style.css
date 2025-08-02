@@ -282,8 +282,9 @@ figure:focus-within figcaption {
     color: var(--primary-background-color);
 }
 
-.products .content-wrapper header h3 {
+.products .content-wrapper h2 {
     justify-self: center;
+    text-decoration: underline;
 }
 
 
@@ -338,6 +339,7 @@ figure:focus-within figcaption {
     position: relative;
     text-align: center;
     color: var(--secondary-background-color);
+    border: 3px solid var(--primary-button-color);
 }
 
 
@@ -349,6 +351,10 @@ figure:focus-within figcaption {
     transform: translate(-50%, -50%);
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--shadow-color-dark);
+}
+
+.sustainability h3 {
+    text-shadow: 2px 2px 2px var(--primary-background-color);
 }
 
 .sustainability button {
@@ -366,6 +372,7 @@ figure:focus-within figcaption {
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--shadow-color-dark);
+    text-shadow: 1px 1px 1px var(--primary-background-color);
 }
 
 .faqs button {
@@ -393,6 +400,10 @@ figure:focus-within figcaption {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--primary-button-color);
     color: var(--secondary-background-color);
+}
+
+.cta h4 {
+    text-shadow: 1px 1px 1px var(--primary-background-color);
 }
 
 .cta button {
