@@ -76,6 +76,7 @@ button {
 
 @media (prefers-color-scheme: light) {
     :root {
+        --primary-text-color: white;
         --primary-background-color: white;
         --secondary-background-color: darkslategray;
         --primary-accent-color: darkorange;
@@ -93,8 +94,9 @@ button {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-background-color: white;
-        --secondary-background-color: darkslategray;
+        --primary-text-color: white;
+        --primary-background-color: darkslategray;
+        --secondary-background-color: white;
         --primary-accent-color: darkorange;
         --secondary-accent-color: deepskyblue;
         --shadow-primary-light: rgba(255, 140, 0, 0.5);
@@ -114,7 +116,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-text-color);
 }
 
 .mainHeader div {
@@ -137,7 +139,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: clamp(1rem, 3vw, 2.5rem);
 }
 
 .mainHeader nav img {
@@ -149,7 +150,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 1rem 0;
     color: var(--secondary-background-color);
     background-color: var(--primary-background-color);
 }
@@ -179,7 +179,7 @@ button {
     border-radius: 5px;
     
     background-color: var(--secondary-accent-color);
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 button:focus {
@@ -295,7 +295,7 @@ figure:focus-within figcaption {
     transform: translate(-50%, -50%);
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--secondary-accent-color);
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
     border-radius: 5px;
 }
 
@@ -329,6 +329,10 @@ figure:focus-within figcaption {
     color: var(--primary-accent-color);
 }
 
+.aboutQuote blockquote {
+    padding: clamp(1rem, 3vw, 2.5rem);
+}
+
 .sustainability {
     position: relative;
     text-align: center;
@@ -358,7 +362,7 @@ figure:focus-within figcaption {
 
 .faqs {
     margin: clamp(1rem, 3vw, 2.5rem);
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
     background-image: url(Images/deck-building-progress.jpg);
     background-position: center;  
     font-weight: 600;
@@ -372,7 +376,7 @@ figure:focus-within figcaption {
 .faqs button {
     font-weight: 1000;
     background-color: var(--secondary-accent-color);
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 .faqs button:hover {
@@ -407,10 +411,14 @@ figure:focus-within figcaption {
 .cta h3 {
     color: var(--primary-accent-color);
 }
+
+.cta h4 {
+    color: var(--primary-text-color);
+}
 .cta button {
     margin: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--primary-accent-color);
-    color: var(--primary-background-color);
+    color: var(--primary-text-color);
 }
 
 .cta button:hover {
