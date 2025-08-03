@@ -76,12 +76,14 @@ button {
 
 @media (prefers-color-scheme: light) {
     :root {
-        --primary-background-color: darkslategray;
-        --secondary-background-color: white;
-        --primary-button-color: darkorange;
-        --hover-text-color: deepskyblue;
-        --shadow-color-light: rgba(255, 140, 0, 0.5);
-        --shadow-color-dark: rgba(255, 140, 0, .75);
+        --primary-background-color: white;
+        --secondary-background-color: darkslategray;
+        --primary-accent-color: darkorange;
+        --secondary-accent-color: deepskyblue;
+        --shadow-primary-light: rgba(255, 140, 0, 0.5);
+        --shadow-primary-dark: rgba(255, 140, 0, .75);
+        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
+        --shadow-secondary-dark: rgba(0, 191, 255, .75);
 
         --start: 50%;
     }
@@ -91,12 +93,14 @@ button {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-background-color: darkslategray;
-        --secondary-background-color: white;
-        --primary-button-color: darkorange;
-        --hover-text-color: deepskyblue;
-        --shadow-color-light: rgba(255, 140, 0, 0.5);
-        --shadow-color-dark: rgba(255, 140, 0, .75);
+        --primary-background-color: white;
+        --secondary-background-color: darkslategray;
+        --primary-accent-color: darkorange;
+        --secondary-accent-color: deepskyblue;
+        --shadow-primary-light: rgba(255, 140, 0, 0.5);
+        --shadow-primary-dark: rgba(255, 140, 0, .75);
+        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
+        --shadow-secondary-dark: rgba(0, 191, 255, .75);
 
         --start: 50%;
     }
@@ -110,7 +114,7 @@ button {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
 }
 
 .mainHeader div {
@@ -145,6 +149,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 1rem 0;
     color: var(--secondary-background-color);
     background-color: var(--primary-background-color);
 }
@@ -156,12 +161,12 @@ button {
 .signUp article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
-    border: 2px solid var(--hover-text-color);
+    
     
 }
 
 .signUp h1 {
-    color: var(--primary-button-color);
+    color: var(--primary-accent-color);
 }
 
 button {
@@ -172,26 +177,22 @@ button {
     font-size: 1rem;
     font-weight: 600;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px var(--hover-text-color);
-    background-color: var(--primary-button-color);
-    color: var(--secondary-background-color);
+    
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-background-color);
 }
 
 button:focus {
-    outline: 2px solid var(--hover-text-color);
+    outline: 2px solid var(--secondary-accent-color);
     outline-offset: 2px; 
 }
 
 button:hover {
-    color: var(--hover-text-color);
+    color: var(--primary-accent-color);
     transform: translateY(-2px);
 }
 
 /* IMAGE SWAP */
-
-.img-swap {
-    border: 2px solid var(--primary-button-color);
-}
 
 .img-swap p:first-child {
   bottom: 0;
@@ -265,58 +266,51 @@ figure:focus-within figcaption {
 
 /* PRODUCTS */
 
-.products {
-    margin: 1rem;
-    border: 2px solid var(--secondary-background-color);
-}
 
-.products .content-wrapper {
+.products {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
     justify-content: space-evenly;
-    background-image: url(Images/furnished-deck.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: var(--secondary-background-color);
     color: var(--primary-background-color);
 }
 
-.products .content-wrapper h2 {
+.products h2 {
     justify-self: center;
-    text-decoration: underline;
 }
 
 
-.products .content-wrapper article {
+.products article {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    max-width: 350px;
     flex: 1 1 auto;
-    margin: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--primary-background-color);
-    border: 2px solid var(--hover-text-color);
 }
 
-.products .content-wrapper article h2 {
-    text-align: center;
+.products article h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: clamp(1rem, 3vw, 2.5rem);
-    color: var(--primary-button-color);
+    background-color: var(--shadow-secondary-dark);
+    color: var(--primary-background-color);
+    border-radius: 5px;
 }
 
 
 
-.products .content-wrapper article p {
+
+.products article p {
     text-align: center;
     padding: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-background-color);
     
 }
 
-.products .content-wrapper article h2:hover {
-    color: var(--hover-text-color);
+.products article h2:hover {
+    color: var(--primary-accent-color);
 }
 
 .aboutQuote {
@@ -334,14 +328,14 @@ figure:focus-within figcaption {
 .aboutQuote .content-wrapper h3{
     display: flex;
     justify-content: flex-end;
-    color: var(--primary-button-color);
+    color: var(--primary-accent-color);
 }
 
 .sustainability {
     position: relative;
     text-align: center;
-    color: var(--secondary-background-color);
-    border: 3px solid forestgreen;
+    color: var(--primary-background-color);
+    
 }
 
 
@@ -352,45 +346,45 @@ figure:focus-within figcaption {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--shadow-color-dark);
-}
-
-.sustainability h3 {
-    text-shadow: 2px 2px 2px var(--primary-background-color);
+    background-color: var(--shadow-secondary-dark);
 }
 
 .sustainability button {
     background-color: var(--primary-background-color);
+    color: var(--primary-accent-color);
+}
+
+.sustainability button:hover {
+    color: var(--secondary-accent-color);
 }
 
 .faqs {
     margin: clamp(1rem, 3vw, 2.5rem);
-    color: var(--secondary-background-color);
+    color: var(--primary-background-color);
     background-image: url(Images/deck-building-progress.jpg);
     background-position: center;
-    border: 2px solid var(--secondary-background-color);
+    
 }
 
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--shadow-color-dark);
-    text-shadow: 1px 1px 1px var(--primary-background-color);
+    background-color: var(--shadow-primary-dark);
 }
 
 .faqs button {
-    background-color: var(--secondary-background-color);
-    color: var(--primary-button-color);
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-background-color);
 }
 
 .faqs button:hover {
-    color: var(--hover-text-color);
+    color: var(--primary-accent-color);
 }
 
 .cta {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    border: 2px solid var(--hover-text-color);
+    
 }
 
 .cta address {
@@ -401,35 +395,30 @@ figure:focus-within figcaption {
     align-items: center;
     margin: clamp(1rem, 3vw, 2.5rem);
     padding: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--primary-button-color);
-    color: var(--secondary-background-color);
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-background-color);
     
 }
 
 .cta article {
     margin: clamp(1rem, 3vw, 2.5rem);
     padding: clamp(1rem, 3vw, 2.5rem);
-    border: 2px solid var(--primary-background-color);
-}
-
-.cta h4 {
-    text-shadow: 1px 1px 1px var(--primary-background-color);
     
 }
 
 .cta button {
     margin: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--secondary-background-color);
+    background-color: var(--primary-accent-color);
     color: var(--primary-background-color);
 }
 
 .cta button:hover {
-    color: var(--hover-text-color);
+    color: var(--secondary-accent-color);
 }
 
 footer .content-wrapper {
     justify-content: space-evenly;
     margin: clamp(1rem, 3vw, 2.5rem);
-    color: var(--primary-button-color);
-    border: 2px solid var(--secondary-background-color);
+    color: var(--primary-accent-color);
+    
 }
