@@ -248,7 +248,7 @@ button:hover {
     pointer-events: none;
     position: absolute;
     top: 85%;
-    left: -75px;
+    left: -85px;
     width: 0px;
     color: var(--primary-accent-color);
     cursor: ew-resize;
