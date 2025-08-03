@@ -84,7 +84,7 @@ button {
     :root {
         --primary-text-color: white;
         --primary-background-color: white;
-        --secondary-background-color: darkslategray;
+        --secondary-background-color: black;
         --primary-accent-color: darkorange;
         --secondary-accent-color: deepskyblue;
         --shadow-primary-light: rgba(255, 140, 0, 0.5);
@@ -101,7 +101,7 @@ button {
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-text-color: white;
-        --primary-background-color: darkslategray;
+        --primary-background-color: black;
         --secondary-background-color: white;
         --primary-accent-color: darkorange;
         --secondary-accent-color: deepskyblue;
