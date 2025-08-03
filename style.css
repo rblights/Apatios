@@ -240,6 +240,18 @@ button:hover {
     transition: right 0.4s ease;
 }
 
+.slider-handle h1 {
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    width: 0px;
+    height: 100%;
+    color: var(--primary-accent-color);
+    cursor: ew-resize;
+    z-index: 2;
+    transition: right 0.4s ease;
+}
+
 /* Adding a shadow effect to the slider handle */
 .slider-handle:before {
     content: '';
