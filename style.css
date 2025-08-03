@@ -294,7 +294,7 @@ figure:focus-within figcaption {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--shadow-secondary-dark);
+    background-color: var(--secondary-accent-color);
     color: var(--primary-background-color);
     border-radius: 5px;
 }
@@ -313,15 +313,13 @@ figure:focus-within figcaption {
     color: var(--primary-accent-color);
 }
 
-.aboutQuote {
-    background-color: var(--secondary-background-color);
-}
+
 
 .aboutQuote .content-wrapper {
     flex-direction: column;
     margin: clamp(1rem, 3vw, 2.5rem);
-    color: var(--primary-background-color);
-    font-family: monospace;
+    border: 2px solid var(--secondary-accent-color);
+    color: var(--secondary-background-color);
 }
 
 
@@ -362,8 +360,8 @@ figure:focus-within figcaption {
     margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-background-color);
     background-image: url(Images/deck-building-progress.jpg);
-    background-position: center;
-    
+    background-position: center;  
+    font-weight: 600;
 }
 
 .faqs p {
@@ -372,6 +370,7 @@ figure:focus-within figcaption {
 }
 
 .faqs button {
+    font-weight: 1000;
     background-color: var(--secondary-accent-color);
     color: var(--primary-background-color);
 }
@@ -403,9 +402,11 @@ figure:focus-within figcaption {
 .cta article {
     margin: clamp(1rem, 3vw, 2.5rem);
     padding: clamp(1rem, 3vw, 2.5rem);
-    
 }
 
+.cta h3 {
+    color: var(--primary-accent-color);
+}
 .cta button {
     margin: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--primary-accent-color);
