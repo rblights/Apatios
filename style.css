@@ -228,8 +228,17 @@ button:hover {
     right: 90%;
     width: 5px;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--secondary-background-color);
     cursor: ew-resize;
+    z-index: 2;
+    transition: right 0.4s ease;
+}
+
+.slider-handle h1 {
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    width: 0px;
     z-index: 2;
     transition: right 0.4s ease;
 }
@@ -244,17 +253,17 @@ button:hover {
     height: 25px;
     background-color: var(--primary-background-color);
     border-radius: 50%;
-    border: 3px solid #ccc;
+    border: 3px solid var(--secondary-background-color);
     transform: translateY(-50%);
 }
 
 /* On hover, reveal the entire 'after' image */
-.comparison-slider:hover .after-image {
+.comparison-slider:hover:active .after-image {
     right: 0;
 }
 
 /* On hover, move the slider handle to the left */
-.comparison-slider:hover .slider-handle {
+.comparison-slider:hover:active .slider-handle {
     right: 0;
 }
 
