@@ -240,6 +240,12 @@ button:hover {
 }
 
 .slider-handle h1 {
+    user-select: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -webkit-touch-callout:none;
+    pointer-events: none;
     position: absolute;
     top: 90%;
     left: -75px;
