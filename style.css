@@ -241,7 +241,7 @@ button:hover {
 
 .slider-handle h1 {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 90%;
     width: 0px;
     color: var(--primary-accent-color);
@@ -254,7 +254,7 @@ button:hover {
 .slider-handle:before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: -10px;
     width: 25px;
     height: 25px;
