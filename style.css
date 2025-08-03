@@ -51,6 +51,7 @@ main {
 }
 
 picture, img {
+    pointer-events: none;
     display: block;
     width: 100%;
 }
@@ -230,15 +231,6 @@ button:hover {
     height: 100%;
     background-color: var(--secondary-background-color);
     cursor: ew-resize;
-    z-index: 2;
-    transition: right 0.4s ease;
-}
-
-.slider-handle h1 {
-    position: absolute;
-    top: 50%;
-    right: 90%;
-    width: 0px;
     z-index: 2;
     transition: right 0.4s ease;
 }
