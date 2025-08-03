@@ -201,7 +201,6 @@ button:hover {
 /* IMAGE SWAP */
 
 .comparison-slider {
-    display: flex;
     position: relative;
     width: 100%;
     flex-basis: 1 1 650px;
@@ -245,7 +244,6 @@ button:hover {
     top: 50%;
     right: 90%;
     width: 0px;
-    height: 100%;
     color: var(--primary-accent-color);
     cursor: ew-resize;
     z-index: 2;
