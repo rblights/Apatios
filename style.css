@@ -247,7 +247,7 @@ button:hover {
     -webkit-touch-callout:none;
     pointer-events: none;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: -75px;
     width: 0px;
     color: var(--primary-accent-color);
