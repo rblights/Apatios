@@ -91,8 +91,6 @@ button {
         --shadow-primary-dark: rgba(255, 140, 0, .75);
         --shadow-secondary-light: rgba(0, 191, 255, 0.5);
         --shadow-secondary-dark: rgba(0, 191, 255, .75);
-
-        --start: 50%;
     }
 }
 
@@ -109,8 +107,6 @@ button {
         --shadow-primary-dark: rgba(255, 140, 0, .75);
         --shadow-secondary-light: rgba(0, 191, 255, 0.5);
         --shadow-secondary-dark: rgba(0, 191, 255, .75);
-
-        --start: 50%;
     }
 }
 
@@ -152,7 +148,7 @@ button {
     height: auto;
 }
 
-.signUp {
+.intro {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -160,18 +156,18 @@ button {
     background-color: var(--primary-background-color);
 }
 
-.signUp div {
+.intro div {
     flex: 1 1 600px;   
 }
 
-.signUp article {
+.intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     
     
 }
 
-.signUp h1 {
+.intro h1 {
     color: var(--primary-accent-color);
 }
 
@@ -181,7 +177,7 @@ button {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 750;
     border-radius: 5px;
     
     background-color: var(--secondary-accent-color);
@@ -248,7 +244,7 @@ button:hover {
     pointer-events: none;
     position: absolute;
     top: 85%;
-    left: -85px;
+    left: -90px;
     width: 0px;
     color: var(--primary-accent-color);
     cursor: ew-resize;
@@ -293,10 +289,10 @@ button:hover {
     }
 }
 
-/* PRODUCTS */
+/* pages */
 
 
-.products {
+.pages {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -306,19 +302,19 @@ button:hover {
     color: var(--primary-background-color);
 }
 
-.products h2 {
+.pages h2 {
     justify-self: center;
 }
 
 
-.products article {
+.pages article {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
 }
 
-.products article h2 {
+.pages article h2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -332,14 +328,14 @@ button:hover {
 
 
 
-.products article p {
+.pages article p {
     text-align: center;
     padding: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-background-color);
     
 }
 
-.products article h2:hover {
+.pages article h2:hover {
     color: var(--primary-accent-color);
 }
 
@@ -413,6 +409,25 @@ button:hover {
     color: var(--primary-accent-color);
 }
 
+.faqsQA .content-wrapper{
+    flex-direction: column;
+}
+
+.faqsQA summary {
+    color: var(--primary-accent-color);
+    margin: clamp(1rem, 3vw, 2.5rem);
+    cursor: pointer;
+}
+
+.faqsQA details {
+    color: var(--secondary-background-color);
+    margin: clamp(1rem, 3vw, 2.5rem);
+    
+
+}
+
+
+
 .cta {
     display: flex;
     flex-wrap: wrap;
@@ -447,6 +462,7 @@ button:hover {
 }
 .cta button {
     margin: clamp(1rem, 3vw, 2.5rem);
+    font-weight: 1000;
     background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
 }
