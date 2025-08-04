@@ -80,9 +80,25 @@ button {
 
 /* THEME */
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-text-color: white;
+        --secondary-text-color: white;
+        --primary-background-color: black;
+        --secondary-background-color: white;
+        --primary-accent-color: darkorange;
+        --secondary-accent-color: deepskyblue;
+        --shadow-primary-light: rgba(255, 140, 0, 0.5);
+        --shadow-primary-dark: rgba(255, 140, 0, .75);
+        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
+        --shadow-secondary-dark: rgba(0, 191, 255, .75);
+    }
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --primary-text-color: white;
+        --secondary-text-color: darkslategray;
         --primary-background-color: white;
         --secondary-background-color: black;
         --primary-accent-color: darkorange;
@@ -96,19 +112,7 @@ button {
 
 
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-text-color: white;
-        --primary-background-color: black;
-        --secondary-background-color: white;
-        --primary-accent-color: darkorange;
-        --secondary-accent-color: deepskyblue;
-        --shadow-primary-light: rgba(255, 140, 0, 0.5);
-        --shadow-primary-dark: rgba(255, 140, 0, .75);
-        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
-        --shadow-secondary-dark: rgba(0, 191, 255, .75);
-    }
-}
+
 
 /* STYLE */
 
@@ -152,7 +156,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
 
@@ -172,7 +176,7 @@ button {
 .content {
     margin: auto;
     align-items: center;
-    color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
 
@@ -365,7 +369,7 @@ button:hover {
     flex-direction: column;
     margin: clamp(1rem, 3vw, 2.5rem);
     border: 2px solid var(--secondary-accent-color);
-    color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
 }
 
 
