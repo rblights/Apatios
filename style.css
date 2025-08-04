@@ -190,7 +190,7 @@ button {
     
 }
 
-.content h1 {
+.content h1, h2, h3 {
     margin: auto;
     color: var(--primary-accent-color);
 }
@@ -474,19 +474,21 @@ button:hover {
 
 .cta article {
     margin: clamp(1rem, 3vw, 2.5rem);
-    padding: clamp(1rem, 3vw, 2.5rem);
+
+    border: 2px solid var(--primary-accent-color);
 }
 
-.cta h3 {
+.cta p {
+    color: var(--secondary-text-color);
+    margin: clamp(1rem, 3vw, 2.5rem)
+}
+
+.cta, h3, h4{
     color: var(--primary-accent-color);
     margin: clamp(1rem, 3vw, 2.5rem);
 }
 
-.cta h4 {
-    color: var(--primary-text-color);
-}
 .cta button {
-    margin: clamp(1rem, 3vw, 2.5rem);
     font-weight: 1000;
     background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
