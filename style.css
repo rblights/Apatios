@@ -156,9 +156,7 @@ button {
     background-color: var(--primary-background-color);
 }
 
-.intro div {
-    flex: 1 1 600px;   
-}
+
 
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
@@ -168,6 +166,28 @@ button {
 }
 
 .intro h1 {
+    color: var(--primary-accent-color);
+}
+
+.content {
+    margin: auto;
+    align-items: center;
+    color: var(--secondary-background-color);
+    background-color: var(--primary-background-color);
+}
+
+
+
+.content article {
+    margin: auto;
+    padding: clamp(1rem, 3vw, 2.5rem);
+    margin: clamp(1rem, 3vw, 2.5rem);
+    
+    
+}
+
+.content h1 {
+    margin: auto;
     color: var(--primary-accent-color);
 }
 
