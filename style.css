@@ -119,6 +119,7 @@ button {
     align-items: center;
     text-align: center;
     background-color: var(--primary-text-color);
+    color: var(--secondary-accent-color);
 }
 
 .mainHeader div {
@@ -126,7 +127,6 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 33%;
 }
 
 .mainHeader img {
@@ -475,6 +475,7 @@ button:hover {
 
 .cta h3 {
     color: var(--primary-accent-color);
+    margin: clamp(1rem, 3vw, 2.5rem);
 }
 
 .cta h4 {
@@ -493,6 +494,9 @@ button:hover {
 
 footer .content-wrapper {
     justify-content: space-evenly;
+    align-items: center;
+    
+    gap: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-accent-color);
     
