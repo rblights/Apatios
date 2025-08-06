@@ -124,6 +124,7 @@ button {
     justify-content: center;
     color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
+    min-height: 1000px;
 }
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
