@@ -71,8 +71,8 @@ button {
         --secondary-text-color: white;
         --primary-background-color: black;
         --secondary-background-color: white;
-        --primary-accent-color: rgb(180, 100, 0);
-        --secondary-accent-color: rgb(0, 100, 130);
+        --primary-accent-color: darkorange;
+        --secondary-accent-color: deepskyblue;
     }
 }
 @media (prefers-color-scheme: light) {
@@ -81,8 +81,8 @@ button {
         --secondary-text-color: darkslategray;
         --primary-background-color: white;
         --secondary-background-color: black;
-        --primary-accent-color: rgb(180, 100, 0);
-        --secondary-accent-color: rgb(0, 100, 130);
+        --primary-accent-color: darkorange;
+        --secondary-accent-color: deepskyblue;
     }
 }
 .mainHeader {
@@ -334,12 +334,9 @@ button:hover {
     background-color: var(--primary-accent-color);
     opacity: .75;
 }
-.faqs button  h3{
+.faqs button h3{
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
-}
-.faqs button:hover {
-    color: var(--primary-accent-color);
 }
 .faqsQA {
     display: flex;
