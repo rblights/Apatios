@@ -48,7 +48,8 @@ main {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    font-size: clamp(10px, 1rem, 16px);;
+    font-size: clamp(10px, 1rem, 16px);
+    color: var(--secondary-text-color);
 }
 
 .mainHeader {
