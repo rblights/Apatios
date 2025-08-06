@@ -27,7 +27,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 500px;
+    min-height: 400px;
 }
 .addressHeader address{
     display: flex;
