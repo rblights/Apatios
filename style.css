@@ -47,8 +47,8 @@ main {
 .addressHeader address{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: clamp(1rem, 3vw, 2.5rem);
+    justify-content: space-around;
+    margin: 5px;
     font-size: clamp(10px, 1rem, 16px);
     color: var(--secondary-text-color);
 }
