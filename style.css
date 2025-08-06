@@ -128,7 +128,7 @@ button {
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
-    
+    min-height: 500;
 }
 .intro h1 {
     font-size: clamp(16px, 1.2rem, 30px);;
