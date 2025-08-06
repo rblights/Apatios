@@ -148,6 +148,9 @@ button {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: clamp(1rem, 3vw, 2.5rem);
+    margin: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 3vw, 2.5rem);
 }
 .content article {
     display: flex;
@@ -343,14 +346,18 @@ button:hover {
 }
 .faqsQA summary h3 {
     color: var(--primary-accent-color);
+    padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 3vw, 2.5rem);
     overflow-wrap: break-word;
     cursor: pointer;
 }
 .faqsQA p {
     overflow-wrap: break-word;
     color: var(--secondary-background-color);
+    padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 3vw, 2.5rem);
 }
 .cta {
     display: flex;
