@@ -51,6 +51,7 @@ picture, img {
     pointer-events: none;
     display: block;
     width: 100%;
+    height: auto;
 }
 a {
     color: inherit;
@@ -292,10 +293,6 @@ button:hover {
 }
 .pages article h2:hover {
     color: var(--primary-accent-color);
-}
-.pages img {
-    width: 100%;
-    height: auto;
 }
 .aboutQuote .content-wrapper {
     flex-direction: column;
