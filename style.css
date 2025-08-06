@@ -57,6 +57,8 @@ a {
 }
 button {
     cursor: pointer;
+    padding: clamp(2rem, 6vw, 5rem);
+    margin: clamp(2rem, 6vw, 5rem);
 }
 .content-wrapper {
     display:flex;
@@ -69,8 +71,8 @@ button {
         --secondary-text-color: white;
         --primary-background-color: black;
         --secondary-background-color: white;
-        --primary-accent-color: rgb(215, 120, 0);
-        --secondary-accent-color: rgb(0, 130, 170);
+        --primary-accent-color: rgb(180, 100, 0);
+        --secondary-accent-color: rgb(0, 100, 130);
     }
 }
 @media (prefers-color-scheme: light) {
@@ -79,8 +81,8 @@ button {
         --secondary-text-color: darkslategray;
         --primary-background-color: white;
         --secondary-background-color: black;
-        --primary-accent-color: rgb(215, 120, 0);
-        --secondary-accent-color: rgb(0, 130, 170);
+        --primary-accent-color: rgb(180, 100, 0);
+        --secondary-accent-color: rgb(0, 100, 130);
     }
 }
 .mainHeader {
@@ -127,6 +129,8 @@ button {
     
 }
 .intro h1 {
+    font-size: clamp(16px, 1.2rem, 30px);;
+    font-weight: 750;
     color: var(--primary-accent-color);
 }
 .content {
@@ -160,12 +164,9 @@ button {
 button {
     border: none;
     min-width: 10em;
-    padding: clamp(1rem, 3vw, 2.5rem);
-    margin: clamp(1rem, 3vw, 2.5rem);
     font-size: 1rem;
     font-weight: 750;
     border-radius: 5px;
-    
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
 }
@@ -215,7 +216,7 @@ button:hover {
     z-index: 2;
     transition: left 0.4s ease;
 }
-.slider-handle h1 {
+.slider-handle p {
     user-select: none;
     -webkit-user-select:none;
     -moz-user-select:none;
@@ -226,7 +227,8 @@ button:hover {
     top: 85%;
     left: -90px;
     width: 0px;
-    color: var(--primary-accent-color);
+    color: var(--primary-text-color);
+    text-shadow: 1px 1px 1px var(--secondary-accent-color);
     cursor: ew-resize;
     z-index: 2;
     transition: left 0.4s ease;
@@ -240,7 +242,7 @@ button:hover {
     height: 25px;
     background-color: var(--secondary-accent-color);
     border-radius: 50%;
-    border: 3px solid var(--primary-text-color);
+    border: 3px solid var(--primary-accent-color);
     transform: translateY(-50%);
 }
 .comparison-slider:hover:active .after-image {
@@ -329,7 +331,8 @@ button:hover {
 }
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
-    background-color: var(--shadow-primary-dark);
+    background-color: var(--primary-accent-color);
+    opacity: .75;
 }
 .faqs button {
     background-color: var(--secondary-accent-color);
@@ -382,7 +385,7 @@ button:hover {
     margin: clamp(1rem, 3vw, 2.5rem);
 }
 .cta button {
-    font-weight: 1000;
+    font-weight: 750;
     background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
 }
