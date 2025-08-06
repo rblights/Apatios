@@ -27,7 +27,6 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 400px;
 }
 .addressHeader address{
     display: flex;
@@ -95,6 +94,7 @@ button {
     text-align: center;
     background-color: var(--primary-text-color);
     color: var(--secondary-accent-color);
+    min-height: 100px;
 }
 .mainHeader div {
     display: flex;
@@ -128,7 +128,7 @@ button {
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
-    min-height: 500;
+    min-height: 400px;
 }
 .intro h1 {
     font-size: clamp(16px, 1.2rem, 30px);;
@@ -275,7 +275,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
-    min-height: 500;
+    min-height: 100px;
 }
 .pages article h2 {
     position: absolute;
@@ -306,7 +306,7 @@ button:hover {
     justify-content: flex-end;
     color: var(--primary-accent-color);
     padding: clamp(1rem, 3vw, 2.5rem);
-    min-height: 500;
+    min-height: 100px;
 }
 .aboutQuote blockquote {
     padding: clamp(1rem, 3vw, 2.5rem);
@@ -336,7 +336,7 @@ button:hover {
     color: var(--primary-text-color);
     background-image: url(Images/deck-building-progress.webp);
     background-position: center;  
-    min-height: 500;
+    min-height: 100px;
 }
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
