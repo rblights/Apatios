@@ -132,7 +132,9 @@ button {
     min-height: 400px;
 }
 .intro h1 {
-    font-size: clamp(16px, 1.2rem, 30px);;
+    font-size: clamp(16px, 1.2rem, 30px);
+    padding: clamp(1rem, 3vw, 2.5rem);
+    margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-accent-color);
 }
 .content {
