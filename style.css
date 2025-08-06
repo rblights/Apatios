@@ -141,7 +141,10 @@ button {
     align-items: center;
     gap: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-text-color);
-    background-color: var(--primary-background-color);
+    background-image: url('Images/furnished-deck.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .content div {
     display: flex;
@@ -160,6 +163,8 @@ button {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
+    background-color: rgba(00, 0, 0, 0.75);
+;
 }
 .content h1, h2, h3 {
     margin: auto;
@@ -343,14 +348,19 @@ button:hover {
 .faqsQA {
     display: flex;
     flex-direction: column;
+    background-image: url('Images/furnished-deck.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.faqsQA summary h3 {
+.faqsQA h1, h2, summary h3 {
     color: var(--primary-accent-color);
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
     overflow-wrap: break-word;
     cursor: pointer;
+    background-color: rgba(00, 0, 0, 0.75);
 }
 .faqsQA p {
     overflow-wrap: break-word;
@@ -358,6 +368,7 @@ button:hover {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
+    background-color: rgba(00, 0, 0, 0.75);
 }
 .cta {
     display: flex;
