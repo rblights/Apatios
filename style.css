@@ -44,6 +44,13 @@ main {
     text-align: center;
 }
 
+.addressHeader address{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: clamp(10px, 1rem, 16px);;
+}
+
 .mainHeader {
     position: sticky;
     top: 0;
@@ -175,18 +182,30 @@ button {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     align-items: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
 
-
+.content div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
 
 .content article {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 3vw, 2.5rem);
     
     
 }
@@ -372,6 +391,7 @@ button:hover {
     display: flex;
     justify-content: flex-end;
     color: var(--primary-accent-color);
+    padding: clamp(1rem, 3vw, 2.5rem);
 }
 
 .aboutQuote blockquote {
@@ -428,17 +448,20 @@ button:hover {
     color: var(--primary-accent-color);
 }
 
-.faqsQA .content-wrapper{
+.faqsQA {
+    display: flex;
     flex-direction: column;
 }
 
-.faqsQA summary {
+.faqsQA summary h3 {
     color: var(--primary-accent-color);
     margin: clamp(1rem, 3vw, 2.5rem);
+    overflow-wrap: break-word;
     cursor: pointer;
 }
 
-.faqsQA details {
+.faqsQA p {
+    overflow-wrap: break-word;
     color: var(--secondary-background-color);
     margin: clamp(1rem, 3vw, 2.5rem);
     
