@@ -211,7 +211,7 @@ button:hover {
     left: 90%;
     width: 5px;
     height: 100%;
-    background-color: var(--secondary-accent-color);
+    background-color: var(--primary-text-color);
     cursor: ew-resize;
     z-index: 2;
     transition: left 0.4s ease;
@@ -224,11 +224,10 @@ button:hover {
     -webkit-touch-callout:none;
     pointer-events: none;
     position: absolute;
-    top: 85%;
-    left: -90px;
+    top: 90%;
+    left: -60px;
     width: 0px;
-    color: var(--primary-text-color);
-    text-shadow: 1px 1px 1px var(--secondary-accent-color);
+    color: var(--primary-accent-color);
     cursor: ew-resize;
     z-index: 2;
     transition: left 0.4s ease;
@@ -332,7 +331,6 @@ button:hover {
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--primary-accent-color);
-    opacity: .75;
 }
 .faqs button h3{
     background-color: var(--secondary-accent-color);
