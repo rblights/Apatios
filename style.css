@@ -2,7 +2,6 @@ html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
 }
 body {
     display: flex;
@@ -60,7 +59,6 @@ button {
     cursor: pointer;
     padding: clamp(2rem, 6vw, 5rem);
     margin: clamp(2rem, 6vw, 5rem);
-    font-weight: 750;
 }
 .content-wrapper {
     display:flex;
@@ -132,7 +130,6 @@ button {
 }
 .intro h1 {
     font-size: clamp(16px, 1.2rem, 30px);;
-    font-weight: 750;
     color: var(--primary-accent-color);
 }
 .content {
@@ -165,7 +162,6 @@ button {
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
     background-color: rgba(00, 0, 0, 0.75);
-;
 }
 .content h1, h2, h3 {
     margin: auto;
@@ -296,6 +292,10 @@ button:hover {
 .pages article h2:hover {
     color: var(--primary-accent-color);
 }
+.pages img {
+    width: 100%;
+    height: auto;
+}
 .aboutQuote .content-wrapper {
     flex-direction: column;
     margin: clamp(1rem, 3vw, 2.5rem);
@@ -336,7 +336,6 @@ button:hover {
     color: var(--primary-text-color);
     background-image: url(Images/deck-building-progress.webp);
     background-position: center;  
-    font-weight: 600;
 }
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
@@ -354,7 +353,7 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
-.faqsQA h1, h2, summary h3 {
+.faqsQA h1, .faqsQA h2, .faqsQA summary h3 {
     color: var(--primary-accent-color);
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
@@ -400,7 +399,6 @@ button:hover {
     margin: clamp(1rem, 3vw, 2.5rem);
 }
 .cta button {
-    font-weight: 750;
     background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
 }
