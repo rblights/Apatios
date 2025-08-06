@@ -1,12 +1,9 @@
-/* SETUP & STRUCTURE */
-
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
 }
-
 body {
     display: flex;
     flex-direction: column;
@@ -16,25 +13,13 @@ body {
     font-size: clamp(16px, 1.2rem, 30px);
     color: var(--primary-text-color);
 }
-
 *, *:before, *:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     padding: 0;
     margin: 0;
-
-    /*  DEV TOOLS 
-    border: 2px solid red;
-    padding: 1px; 
-
-    section {
-    min-height: 250px;
-    }
-    */
-    
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -43,7 +28,6 @@ main {
     align-items: center;
     text-align: center;
 }
-
 .addressHeader address{
     display: flex;
     flex-wrap: nowrap;
@@ -52,13 +36,11 @@ main {
     font-size: clamp(10px, 1rem, 16px);
     color: var(--secondary-text-color);
 }
-
 .mainHeader {
     position: sticky;
     top: 0;
     z-index: 3;
 }
-
 picture, img {
     user-select: none;
     -webkit-user-select:none;
@@ -69,62 +51,38 @@ picture, img {
     display: block;
     width: 100%;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 button {
     cursor: pointer;
 }
-
-
-
 .content-wrapper {
     display:flex;
     flex-wrap: wrap;
     padding: 0 3vw;
 }
-
-/* THEME */
-
 @media (prefers-color-scheme: dark) {
     :root {
         --primary-text-color: white;
         --secondary-text-color: white;
         --primary-background-color: black;
         --secondary-background-color: white;
-        --primary-accent-color: darkorange;
-        --secondary-accent-color: deepskyblue;
-        --shadow-primary-light: rgba(255, 140, 0, 0.5);
-        --shadow-primary-dark: rgba(255, 140, 0, .75);
-        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
-        --shadow-secondary-dark: rgba(0, 191, 255, .75);
+        --primary-accent-color: rgb(215, 120, 0);
+        --secondary-accent-color: rgb(0, 130, 170);
     }
 }
-
 @media (prefers-color-scheme: light) {
     :root {
         --primary-text-color: white;
         --secondary-text-color: darkslategray;
         --primary-background-color: white;
         --secondary-background-color: black;
-        --primary-accent-color: darkorange;
-        --secondary-accent-color: deepskyblue;
-        --shadow-primary-light: rgba(255, 140, 0, 0.5);
-        --shadow-primary-dark: rgba(255, 140, 0, .75);
-        --shadow-secondary-light: rgba(0, 191, 255, 0.5);
-        --shadow-secondary-dark: rgba(0, 191, 255, .75);
+        --primary-accent-color: rgb(215, 120, 0);
+        --secondary-accent-color: rgb(0, 130, 170);
     }
 }
-
-
-
-
-
-/* STYLE */
-
 .mainHeader {
     display: flex;
     flex-wrap: wrap;
@@ -134,33 +92,26 @@ button {
     background-color: var(--primary-text-color);
     color: var(--secondary-accent-color);
 }
-
 .mainHeader div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
 .mainHeader img {
     max-width: 100px;
     height: auto;
 }
-
-
-
 .mainHeader nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-
 .mainHeader nav img {
     max-width: 75px;
     height: auto;
 }
-
 .intro {
     display: flex;
     flex-wrap: wrap;
@@ -170,19 +121,14 @@ button {
     color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
-
-
-
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     
 }
-
 .intro h1 {
     color: var(--primary-accent-color);
 }
-
 .content {
     display: flex;
     flex-direction: column;
@@ -192,14 +138,12 @@ button {
     color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
-
 .content div {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-
 .content article {
     display: flex;
     flex-direction: column;
@@ -208,15 +152,11 @@ button {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
-    
-    
 }
-
 .content h1, h2, h3 {
     margin: auto;
     color: var(--primary-accent-color);
 }
-
 button {
     border: none;
     min-width: 10em;
@@ -229,19 +169,14 @@ button {
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
 }
-
 button:focus {
     outline: 2px solid var(--secondary-accent-color);
     outline-offset: 2px; 
 }
-
 button:hover {
     color: var(--primary-accent-color);
     transform: translateY(-2px);
 }
-
-/* IMAGE SWAP */
-
 .comparison-slider {
     position: relative;
     width: auto;
@@ -250,8 +185,6 @@ button:hover {
     overflow: hidden;
     cursor: ew-resize;
 }
-
-/* Style for the 'before' and 'after' images */
 .comparison-slider img {
     width: 100%;
     height: 100%;
@@ -259,12 +192,9 @@ button:hover {
     object-fit: cover;
     object-position: center;
 }
-
 .before-image {
     height: 100%;
 }
-
-/* The 'after' image will overlay the 'before' image */
 .after-image {
     position: absolute;
     top: 0;
@@ -274,8 +204,6 @@ button:hover {
     height: 100%;
     transition: left 0.4s ease;
 }
-
-/* The draggable handle */
 .slider-handle {
     position: absolute;
     top: 0;
@@ -287,7 +215,6 @@ button:hover {
     z-index: 2;
     transition: left 0.4s ease;
 }
-
 .slider-handle h1 {
     user-select: none;
     -webkit-user-select:none;
@@ -304,8 +231,6 @@ button:hover {
     z-index: 2;
     transition: left 0.4s ease;
 }
-
-/* Adding a shadow effect to the slider handle */
 .slider-handle:before {
     content: '';
     position: absolute;
@@ -318,20 +243,12 @@ button:hover {
     border: 3px solid var(--primary-text-color);
     transform: translateY(-50%);
 }
-
-/* On hover, reveal the entire 'after' image */
 .comparison-slider:hover:active .after-image {
  left: 0;
 }
-
-/* On hover, move the slider handle to the left */
 .comparison-slider:hover:active .slider-handle {
  left: 0;
 }
-
-/* pages */
-
-
 .pages {
     display: flex;
     flex-wrap: wrap;
@@ -341,19 +258,15 @@ button:hover {
     margin: clamp(1rem, 3vw, 2.5rem); 
     color: var(--primary-background-color);
 }
-
 .pages h2 {
     justify-self: center;
 }
-
-
 .pages article {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 auto;
 }
-
 .pages article h2 {
     position: absolute;
     top: 50%;
@@ -364,51 +277,34 @@ button:hover {
     color: var(--primary-text-color);
     border-radius: 5px;
 }
-
-
-
-
 .pages article p {
     text-align: center;
     padding: clamp(1rem, 3vw, 2.5rem);
     color: var(--secondary-background-color);
-    
 }
-
 .pages article h2:hover {
     color: var(--primary-accent-color);
 }
-
-
-
 .aboutQuote .content-wrapper {
     flex-direction: column;
     margin: clamp(1rem, 3vw, 2.5rem);
     border: 2px solid var(--secondary-accent-color);
     color: var(--secondary-text-color);
 }
-
-
 .aboutQuote .content-wrapper p{
     display: flex;
     justify-content: flex-end;
     color: var(--primary-accent-color);
     padding: clamp(1rem, 3vw, 2.5rem);
 }
-
 .aboutQuote blockquote {
     padding: clamp(1rem, 3vw, 2.5rem);
 }
-
 .sustainability {
     position: relative;
     text-align: center;
     color: var(--primary-background-color);
-    
 }
-
-
-
 .sustainability article {
     position: absolute;
     top: 50%;
@@ -417,68 +313,51 @@ button:hover {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--shadow-secondary-dark);
 }
-
 .sustainability button {
     background-color: var(--primary-background-color);
     color: var(--primary-accent-color);
 }
-
 .sustainability button:hover {
     color: var(--secondary-accent-color);
 }
-
 .faqs {
     margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-text-color);
-    background-image: url(Images/deck-building-progress.jpg);
+    background-image: url(Images/deck-building-progress.webp);
     background-position: center;  
     font-weight: 600;
 }
-
 .faqs p {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--shadow-primary-dark);
 }
-
 .faqs button {
-    font-weight: 1000;
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
 }
-
 .faqs button:hover {
     color: var(--primary-accent-color);
 }
-
 .faqsQA {
     display: flex;
     flex-direction: column;
 }
-
 .faqsQA summary h3 {
     color: var(--primary-accent-color);
     margin: clamp(1rem, 3vw, 2.5rem);
     overflow-wrap: break-word;
     cursor: pointer;
 }
-
 .faqsQA p {
     overflow-wrap: break-word;
     color: var(--secondary-background-color);
     margin: clamp(1rem, 3vw, 2.5rem);
-    
-
 }
-
-
-
 .cta {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    
 }
-
 .cta address {
     display: flex;
     flex-wrap: wrap;
@@ -489,41 +368,31 @@ button:hover {
     padding: clamp(1rem, 3vw, 2.5rem);
     background-color: var(--secondary-accent-color);
     color: var(--primary-background-color);
-    
 }
-
 .cta article {
     margin: clamp(1rem, 3vw, 2.5rem);
-
     border: 2px solid var(--primary-accent-color);
 }
-
 .cta p {
     color: var(--secondary-text-color);
     margin: clamp(1rem, 3vw, 2.5rem)
 }
-
 .cta h3, h4 {
     color: var(--primary-accent-color);
     margin: clamp(1rem, 3vw, 2.5rem);
 }
-
 .cta button {
     font-weight: 1000;
     background-color: var(--primary-accent-color);
     color: var(--primary-text-color);
 }
-
 .cta button:hover {
     color: var(--secondary-accent-color);
 }
-
 footer .content-wrapper {
     justify-content: space-evenly;
     align-items: center;
-    
     gap: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-accent-color);
-    
 }
