@@ -334,7 +334,7 @@ button:hover {
     background-color: var(--primary-accent-color);
     opacity: .75;
 }
-.faqs button {
+.faqs button  h3{
     background-color: var(--secondary-accent-color);
     color: var(--primary-text-color);
 }
