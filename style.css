@@ -503,7 +503,7 @@ button:hover {
     margin: clamp(1rem, 3vw, 2.5rem)
 }
 
-.cta, h3, h4{
+.cta h3, h4 {
     color: var(--primary-accent-color);
     margin: clamp(1rem, 3vw, 2.5rem);
 }
