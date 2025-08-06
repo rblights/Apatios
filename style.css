@@ -155,7 +155,9 @@ button {
 .intro {
     display: flex;
     flex-wrap: wrap;
+    flex: 1 1 48%;
     align-items: center;
+    justify-content: center;
     color: var(--secondary-text-color);
     background-color: var(--primary-background-color);
 }
@@ -165,7 +167,6 @@ button {
 .intro article {
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
-    
     
 }
 
@@ -222,8 +223,9 @@ button:hover {
 
 .comparison-slider {
     position: relative;
-    width: 100%;
-    flex-basis: 1 1 650px;
+    width: auto;
+    max-height: 90vh;
+    aspect-ratio: 3/4;
     overflow: hidden;
     cursor: ew-resize;
 }
@@ -231,7 +233,14 @@ button:hover {
 /* Style for the 'before' and 'after' images */
 .comparison-slider img {
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.before-image {
+    height: 100%;
 }
 
 /* The 'after' image will overlay the 'before' image */
@@ -242,7 +251,6 @@ button:hover {
     width: 100%;
     overflow: hidden;
     height: 100%;
-    object-fit: cover;
     transition: left 0.4s ease;
 }
 
@@ -298,19 +306,6 @@ button:hover {
 /* On hover, move the slider handle to the left */
 .comparison-slider:hover:active .slider-handle {
  left: 0;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    .comparison-slider {
-        max-width: 100%;
-    }
-
-    .slider-handle:before {
-        width: 20px;
-        height: 20px;
-        left: -7px; /* Slightly smaller handle for mobile screens */
-    }
 }
 
 /* pages */
@@ -373,7 +368,7 @@ button:hover {
 }
 
 
-.aboutQuote .content-wrapper h3{
+.aboutQuote .content-wrapper p{
     display: flex;
     justify-content: flex-end;
     color: var(--primary-accent-color);
