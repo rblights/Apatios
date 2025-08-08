@@ -235,7 +235,7 @@ button:hover {
     -webkit-touch-callout:none;
     pointer-events: none;
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: -60px;
     width: 0px;
     color: var(--primary-accent-color);
@@ -246,7 +246,7 @@ button:hover {
 .slider-handle:before {
     content: '';
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: -10px;
     width: 25px;
     height: 25px;
