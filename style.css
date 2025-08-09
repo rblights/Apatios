@@ -172,6 +172,7 @@ button {
 .content h1, h2, h3 {
     margin: auto;
     color: var(--primary-accent-color);
+    font-size: xx-large;
 }
 button {
     border: none;
