@@ -12,6 +12,11 @@ body {
     font-size: clamp(16px, 1.2rem, 30px);
     font-weight: 750;
     color: var(--primary-text-color);
+    background-image: url('Images/furnished-deck.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    
 }
 *, *:before, *:after {
     -webkit-box-sizing: inherit;
@@ -27,6 +32,9 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.addressHeader {
+    background-color: var(--primary-background-color);
 }
 .addressHeader address{
     display: flex;
@@ -143,10 +151,6 @@ button {
     align-items: center;
     gap: clamp(1rem, 3vw, 2.5rem);
     color: var(--primary-text-color);
-    background-image: url('Images/furnished-deck.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .content div {
     display: flex;
@@ -265,7 +269,6 @@ button:hover {
     align-items: stretch;
     width: 100%;
     justify-content: space-evenly;
-    margin: clamp(1rem, 3vw, 2.5rem); 
     color: var(--primary-background-color);
 }
 .pages h2 {
@@ -295,6 +298,9 @@ button:hover {
 }
 .pages article h2:hover {
     color: var(--primary-accent-color);
+}
+.aboutQuote {
+    background-color: var(--primary-background-color);
 }
 .aboutQuote .content-wrapper {
     flex-direction: column;
@@ -350,10 +356,6 @@ button:hover {
 .faqsQA {
     display: flex;
     flex-direction: column;
-    background-image: url('Images/furnished-deck.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 .faqsQA h1, .faqsQA h2, .faqsQA summary h3 {
     color: var(--primary-accent-color);
@@ -406,6 +408,9 @@ button:hover {
 }
 .cta button:hover {
     color: var(--secondary-accent-color);
+}
+footer {
+    background-color: var(--primary-background-color);
 }
 footer .content-wrapper {
     justify-content: space-evenly;
