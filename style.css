@@ -153,10 +153,8 @@ button {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    padding: clamp(1rem, 3vw, 2.5rem);
-    margin: clamp(1rem, 3vw, 2.5rem);
-    gap: clamp(1rem, 3vw, 2.5rem);
 }
+
 .content article {
     display: flex;
     flex-direction: column;
