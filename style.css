@@ -356,8 +356,13 @@ button:hover {
 .faqsQA {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+}
+.faqsQA div, .faqsQA details {
+    width: 100vw;
 }
 .faqsQA h1, .faqsQA h2, .faqsQA summary h3 {
+    width: 100vw;
     color: var(--primary-accent-color);
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
@@ -367,6 +372,7 @@ button:hover {
     background-color: rgba(00, 0, 0, 0.75);
 }
 .faqsQA p {
+    width: 100vw;
     overflow-wrap: break-word;
     color: var(--primary-text-color);
     padding: clamp(1rem, 3vw, 2.5rem);
