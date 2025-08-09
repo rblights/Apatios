@@ -142,7 +142,7 @@ button {
     margin: auto;
     align-items: center;
     gap: clamp(1rem, 3vw, 2.5rem);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     background-image: url('Images/furnished-deck.webp');
     background-size: cover;
     background-position: center;
@@ -366,7 +366,7 @@ button:hover {
 }
 .faqsQA p {
     overflow-wrap: break-word;
-    color: var(--secondary-background-color);
+    color: var(--primary-text-color);
     padding: clamp(1rem, 3vw, 2.5rem);
     margin: clamp(1rem, 3vw, 2.5rem);
     gap: clamp(1rem, 3vw, 2.5rem);
